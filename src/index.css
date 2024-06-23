@@ -1,0 +1,271 @@
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d00;
+  color: white;
+  padding: 20px;
+  border-bottom: 5px solid #003300;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header button:hover {
+  background-color: #cc0000;
+}
+
+/* Login Page */
+.login-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.login-container h1 {
+  color: #004d00;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container .login-section {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #00cc99;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-container button:hover {
+  background-color: #009973;
+}
+
+/* User Page */
+.user-container {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.user-page-container {
+  padding: 20px;
+}
+
+.user-page-container h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.user-container main {
+  text-align: left;
+}
+
+.user-container h2 {
+  border-bottom: 2px solid #004d00;
+  padding-bottom: 10px;
+  color: #004d00;
+}
+
+.user-container .energy-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.user-container .energy-stats div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.user-container .energy-stats .bar {
+  width: 100%;
+  height: 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.user-container .energy-stats .blue {
+  background-color: #00ccff;
+}
+
+.user-container .energy-stats .red {
+  background-color: #ff66b2;
+}
+
+.user-container .contribution {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border: 2px solid #00ccff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.user-container .notarizations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-container .notarizations ul li a {
+  color: #004d00;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.user-container .notarizations ul li a:hover {
+  background-color: #e6f7ff;
+}
+
+/* Admin Page */
+.admin-container {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.admin-container main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-container section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.admin-container h2 {
+  border-bottom: 2px solid #004d00;
+  padding-bottom: 10px;
+  color: #004d00;
+}
+
+.admin-container .add-pod input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.admin-container .add-pod button {
+  background-color: #00cc99;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-container .add-pod button:hover {
+  background-color: #009973;
+}
+
+.admin-container .energy-stats .bar {
+  width: 100%;
+  height: 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.admin-container .energy-stats .blue {
+  background-color: #00ccff;
+}
+
+.admin-container .energy-stats .red {
+  background-color: #ff66b2;
+}
+
+.admin-container .contribution table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-container .contribution th,
+.admin-container .contribution td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-container .notarizations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-container .notarizations ul li a {
+  color: #004d00;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.admin-container .notarizations ul li a:hover {
+  background-color: #e6f7ff;
+}
