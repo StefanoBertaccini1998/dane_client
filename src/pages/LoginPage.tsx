@@ -1,7 +1,6 @@
 // src/pages/LoginPage.tsx
 import React from 'react';
 import Navbar from '../components/NavBar';
-
 import { useNavigate } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {
@@ -21,7 +20,7 @@ const LoginPage: React.FC = () => {
       <Navbar />
       <div className="login-container">
         <h1>LOGIN TO YOUR CER</h1>
-        <div className="login-section">
+        <div>
           <h2>ARE YOU A CER MEMBER?</h2>
           <input type="text" placeholder="Insert your POD" />
           <button onClick={handleUserLogin}>Login</button>

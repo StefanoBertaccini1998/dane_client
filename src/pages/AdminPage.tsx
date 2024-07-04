@@ -1,10 +1,14 @@
+import Navbar from '../components/NavBar';
+import ProgressBar from '../components/ProgressBarProps';
+
 const AdminPage = () => {
+  const energiaImmesa = 75;
+  const energiaConsumata = 50;
+  const maxEnergia = 100;
+
     return (
       <div className="admin-container">
-        <header>
-          <h1>D.A.N.E.</h1>
-          <button>Exit</button>
-        </header>
+          <Navbar />
         <main>
           <section className="add-pod">
             <h2>Aggiungi POD alla CER</h2>
@@ -14,13 +18,11 @@ const AdminPage = () => {
           <section className="energy-stats">
             <h2>CER EMPOLI 1</h2>
             <div>
-              <span>Energia immessa</span>
-              <div className="bar blue"></div>
-            </div>
+              <ProgressBar value={energiaImmesa} max={maxEnergia} color="#00ccff" label="Energia immessa" />    
+              </div>
             <div>
-              <span>Energia consumata</span>
-              <div className="bar red"></div>
-            </div>
+              <ProgressBar value={energiaConsumata} max={maxEnergia} color="#ff66b2" label="Energia consumata" />
+              </div>
           </section>
           <section className="contribution">
             <h2>Contributo Autoconsumo</h2>
