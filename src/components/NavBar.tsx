@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 import logo from '../assets/dane_1500.png';
 import './NavBar.css'; 
 import { useNavigate } from 'react-router-dom';
